@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/set_dietPlan">
+
+    <fragment
+        android:id="@+id/set_dietPlan"
+        android:name="com.training.nutritionist.ui.home.HomeFragment"
+        android:label="Set Diet Plan"
+        tools:layout="@layout/fragment_setdietplan" />
+
+    <fragment
+        android:id="@+id/userProfile"
+        android:name="com.training.nutritionist.ui.gallery.UserProfile"
+        android:label="Users Profile"
+        tools:layout="@layout/fragment_userprofile" />
+
+    <fragment
+        android:id="@+id/paymentHistory"
+        android:name="com.training.nutritionist.ui.slideshow.SlideshowFragment"
+        android:label="Payment History"
+        tools:layout="@layout/fragment_paymenthistory" />
+
+    <fragment
+        android:id="@+id/reply"
+        android:name="com.training.nutritionist.ui.tools.ReplyUser"
+        android:label="Reply User"
+        tools:layout="@layout/fragment_replyuser" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.training.nutritionist.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.training.nutritionist.ui.send.SendFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send" />
+</navigation>
